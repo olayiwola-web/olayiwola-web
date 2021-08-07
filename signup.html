@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+    <title>SIGNUP</title>
+    <link rel="stylesheet" href="CSS/signup.css">
+    <script src="JAVASCRIPT/signup.js"></script>
+</head>
+<body>
+    <div id="menu">
+        <a href="#" class="menu_link">HOME</a>
+        <a href="#" class="menu_link">CONTACT</a>
+        <a href="#" class="menu_link">LEARN</a>
+        <a href="#" class="menu_link">ABOUT</a>
+        <a href="#" class="menu_link">POLICY</a>
+        <a href="#" class="menu_link">PRIVACY</a>
+        
+        <div id="cancel" onclick="cancel()">X</div>
+    </div>
+    	<div id="menu_but" onclick="sideBar()">MENU</div>
+    <div id="top" >
+    	<center><h3>WARRIOR'S Homepage</h3></center>
+    	<hr>
+    </div>
+    <br>
+    <form method="post">
+        <strong>Username</strong>
+        <br>
+        <input class="signup" placeholder="Enter your choosen username" required="required">
+        <br>
+
+        <strong>Email</strong>
+        <br>
+        <input class="signup" type="email" placeholder="Enter your email" required="required">
+        <br>
+
+        <strong>Password</strong>
+        <br>
+        <input class="signup" type="password" id="password"  placeholder="Choose a strong password" required="required" oninput="see_span()">
+        <span id="see_p" >See</span>
+        <br>
+
+        <center><button id="signup_button">SIGNUP</button></center>
+    </form>
+    <br>
+ 	   <center>
+	 	   <p>Already a member?</p>
+ 		   <button id="login">Tap to login</button>
+ 	   </center>
+ 	   
+ 	   <!-- LOGIN BOX --->
+ 	<div id="login_box" >
+ 	   <input type="name" class="login_input" placeholder="Enter your username or email" required="required"  />
+ 	   <br>
+ 	   
+ 	   <input type="password" oninput="see_span2()" class="login_input"  id="password2"  placeholder="Enter your password" required="required" />
+ 	   <span id="see2"  onclick="see_password2()">Show</span>
+ 	   <br>
+ 	   <center><button id="login_button" />LOGIN</button>
+ 	</div>
+</body>
+</html>

@@ -1,0 +1,155 @@
+*{
+
+}
+
+body{
+	font-style:italic;
+	
+}
+/* For menu */
+#menu_but {
+	position:fixed;
+	left:0px;
+	height:0px;
+}
+#menu{
+	top:0px;
+	left:0px;
+	width:80%;
+	height:100%;
+	max-width:0px;
+	position:fixed;
+	background:rgba(0, 0, 0, .7);
+	overflow:hidden scroll;
+	transition:.3s;
+}
+#cancel {
+	position:absolute;
+	top:0px;
+	left:80%;
+	width:60px;
+	height:30px;
+	background:red;
+	text-align:center;
+	vertical-align:middle;
+	padding-top:10px;
+}
+#cancel:active {
+	background:darkred;
+}
+.menu_link {
+	display:block;
+	padding:20px;
+	text-decoration:none;
+	color:aqua;
+}
+link:active {
+	color:red;
+}
+h3{
+	font-family:fantasy;
+	margin-top:0%;
+	
+}
+/* For all inputs */
+input {
+	text-indent:10px;
+}
+.signup {
+	width:80%;
+	height:25px;
+	border:1px solid gray;
+	outline:none;
+	border-radius:10px;
+	margin-bottom:20px;
+	transition:.3s;
+}
+.signup:focus {
+	border:2px solid aqua;
+	width:90%;
+	transition:.3s;
+}
+/* For password visibility*/
+#password {
+	overflow-x:hidden;
+	
+}
+
+/* For span to view password */
+#see_p {
+	position:relative;
+	left:-10%;
+	background:teal;
+	visibility:hidden;
+}
+
+#signup_button {
+	width:70px;
+	height:30px;
+	text-align:center;
+	border:1px solid gray;
+	border-radius:10px;
+	user-select:none;
+	outline:none;
+	background:gray;
+}
+#signup_button:active {
+	background:teal;
+	border:2px solid aqua;
+    
+}
+
+#login {
+	width:100px;
+	height:40px;
+	background:royalblue;
+	outline:none;
+	border:1px solid gray;
+	border-radius:10px;
+}
+#login:active {
+	background:teal;
+	border:2px solid aqua;
+	user-select:none;
+}
+
+/*******FOR LOGINING *******/
+#login_box {
+	width:300px;
+	height:300px;
+	background:rgba(0, 0, 0, 0.8);
+	position:fixed;
+	top:15%;
+	left:4%;
+	border-radius:30px;
+	border:20px solid rgba(0, 0, 0, 0.2);
+	display:block;
+}
+
+.login_input {
+	margin-top:20px;
+	margin-bottom:10px;
+	margin-left:7%;
+	width:250px;
+	height:30px;
+	border:1px solid gray;
+	border-radius:10px;
+	background:lightyellow;
+	outline:none;
+}
+.login_input:focus {
+	border:2px solid aqua;
+}
+
+#login_button {
+	width:70px;
+	height:30px;
+	border:1px solid navy;
+	border-radius:10px;
+	outline:none;
+	background:gray;
+	user-select:none;
+}
+#login_button:active {
+	background:lightpurple;
+}
